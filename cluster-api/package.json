@@ -1,0 +1,14 @@
+{
+  "name": "charge-uptime-nodejs",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "yarn autocannon -c 500 -d 30 --workers 10 --renderStatusCodes --latency --warmup [ -c 1 -d 2 ] localhost:3333"
+  },
+  "devDependencies": {
+    "autocannon": "^7.9.0"
+  }
+}
